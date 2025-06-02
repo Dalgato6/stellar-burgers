@@ -9,7 +9,11 @@ import { ModalOverlayUI } from '@ui';
 export const ModalUI: FC<TModalUIProps> = memo(
   ({ title, onClose, children }) => (
     <>
+<<<<<<< HEAD
+      <div className={styles.modal} data-cy='modal'>
+=======
       <div className={styles.modal}>
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
         <div className={styles.header}>
           <h3 className={`${styles.title} text text_type_main-large`}>
             {title}

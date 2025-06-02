@@ -49,7 +49,12 @@ module.exports = {
   },
   plugins: [
     new ESLintPlugin({
+<<<<<<< HEAD
+      extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      quiet: true
+=======
       extensions: ['.js', '.jsx', '.ts', '.tsx']
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html'

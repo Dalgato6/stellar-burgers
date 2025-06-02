@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+import { useAppDispatch, useAppSelector } from '../../services/store';
+=======
 import { useSelector } from '../../services/store';
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
 
 import styles from './constructor-page.module.css';
 
@@ -8,8 +12,13 @@ import { Preloader } from '../../components/ui';
 import { FC } from 'react';
 
 export const ConstructorPage: FC = () => {
+<<<<<<< HEAD
+  const { isLoading } = useAppSelector((state) => state.ingredients);
+  const isIngredientsLoading = isLoading;
+=======
   /** TODO: взять переменную из стора */
   const isIngredientsLoading = false;
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
 
   return (
     <>

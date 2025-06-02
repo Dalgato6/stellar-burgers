@@ -21,6 +21,11 @@ export const ForgotPasswordUI: FC<PageUIProps> = ({
       >
         <div className='pb-6'>
           <Input
+<<<<<<< HEAD
+            onPointerLeaveCapture={() => {}}
+            onPointerEnterCapture={() => {}}
+=======
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
             type='email'
             placeholder='Укажите e-mail'
             onChange={(e) => setEmail(e.target.value)}

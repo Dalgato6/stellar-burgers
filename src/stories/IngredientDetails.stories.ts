@@ -29,6 +29,11 @@ export const DefaultIngredientDetails: Story = {
       image: '',
       image_large: '',
       image_mobile: ''
+<<<<<<< HEAD
+    },
+    onImageLoad: () => {}
+=======
     }
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
   }
 };

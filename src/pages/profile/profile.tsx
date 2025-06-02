@@ -1,5 +1,17 @@
 import { ProfileUI } from '@ui-pages';
 import { FC, SyntheticEvent, useEffect, useState } from 'react';
+<<<<<<< HEAD
+import { useAppDispatch, useAppSelector } from '../../services/store';
+import { fetchUpdateUser } from '../../slices/userSlice';
+
+export const Profile: FC = () => {
+  const user = useAppSelector((state) => state.user.user);
+  const dispatch = useAppDispatch();
+
+  const [formValue, setFormValue] = useState({
+    name: user?.name || '',
+    email: user?.email || '',
+=======
 
 export const Profile: FC = () => {
   /** TODO: взять переменную из стора */
@@ -11,6 +23,7 @@ export const Profile: FC = () => {
   const [formValue, setFormValue] = useState({
     name: user.name,
     email: user.email,
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
     password: ''
   });
 
@@ -29,13 +42,22 @@ export const Profile: FC = () => {
 
   const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
+<<<<<<< HEAD
+    dispatch(fetchUpdateUser(formValue));
+=======
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
   };
 
   const handleCancel = (e: SyntheticEvent) => {
     e.preventDefault();
     setFormValue({
+<<<<<<< HEAD
+      name: user?.name || '',
+      email: user?.email || '',
+=======
       name: user.name,
       email: user.email,
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
       password: ''
     });
   };
@@ -56,6 +78,9 @@ export const Profile: FC = () => {
       handleInputChange={handleInputChange}
     />
   );
+<<<<<<< HEAD
+=======
 
   return null;
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
 };
