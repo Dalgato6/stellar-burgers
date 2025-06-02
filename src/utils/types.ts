@@ -26,8 +26,11 @@ export type TOrder = {
   ingredients: string[];
 };
 
+<<<<<<< HEAD
 export type newOrder = { order: TOrder; name: string } | null;
 
+=======
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
 export type TOrdersData = {
   orders: TOrder[];
   total: number;

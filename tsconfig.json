@@ -9,7 +9,11 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
+<<<<<<< HEAD
     "module": "commonjs",
+=======
+    "module": "esnext",
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,

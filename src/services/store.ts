@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { 
   combineReducers, 
   configureStore,
@@ -28,10 +29,24 @@ const rootReducer = combineReducers({
 });
 
 export const setupStore = () => configureStore({
+=======
+import { configureStore } from '@reduxjs/toolkit';
+
+import {
+  TypedUseSelectorHook,
+  useDispatch as dispatchHook,
+  useSelector as selectorHook
+} from 'react-redux';
+
+const rootReducer = () => {}; // Заменить на импорт настоящего редьюсера
+
+const store = configureStore({
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
   reducer: rootReducer,
   devTools: process.env.NODE_ENV !== 'production'
 });
 
+<<<<<<< HEAD
 export const store = setupStore();
 
 
@@ -51,3 +66,13 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = reduxSelectorHook
 
 
 export default store;
+=======
+export type RootState = ReturnType<typeof rootReducer>;
+
+export type AppDispatch = typeof store.dispatch;
+
+export const useDispatch: () => AppDispatch = () => dispatchHook();
+export const useSelector: TypedUseSelectorHook<RootState> = selectorHook;
+
+export default store;
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9

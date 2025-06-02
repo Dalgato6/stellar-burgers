@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { FC, useState } from 'react';
 import { Preloader } from '../ui/preloader';
 import { IngredientDetailsUI } from '../ui/ingredient-details';
@@ -22,11 +23,21 @@ export const IngredientDetails: FC<{ title?: string }> = ({ title }) => {
   const ingredientData = ingredients.find((item) => item._id === id);
 
   const [isImageLoaded, setImageLoaded] = useState(false);
+=======
+import { FC } from 'react';
+import { Preloader } from '../ui/preloader';
+import { IngredientDetailsUI } from '../ui/ingredient-details';
+
+export const IngredientDetails: FC = () => {
+  /** TODO: взять переменную из стора */
+  const ingredientData = null;
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
 
   if (!ingredientData) {
     return <Preloader />;
   }
 
+<<<<<<< HEAD
   if (error) {
     return <p>Ингредиент не найден</p>;
   }
@@ -42,4 +53,7 @@ export const IngredientDetails: FC<{ title?: string }> = ({ title }) => {
       />
     </>
   );
+=======
+  return <IngredientDetailsUI ingredientData={ingredientData} />;
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
 };

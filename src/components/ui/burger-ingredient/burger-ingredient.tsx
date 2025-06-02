@@ -9,7 +9,10 @@ import {
 } from '@zlden/react-developer-burger-ui-components';
 
 import { TBurgerIngredientUIProps } from './type';
+<<<<<<< HEAD
 import { ErrorMessage } from 'src/components/error/error';
+=======
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
 
 export const BurgerIngredientUI: FC<TBurgerIngredientUIProps> = memo(
   ({ ingredient, count, handleAdd, locationState }) => {

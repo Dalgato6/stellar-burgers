@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { FC, useMemo, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TConstructorIngredient, TIngredient } from '@utils-types';
@@ -51,6 +52,41 @@ export const BurgerConstructor: FC = () => {
   const closeOrderModal = useCallback(() => {
     dispatch(resetOrderModalData());
   }, [dispatch]);
+=======
+import { FC, useMemo } from 'react';
+import { TConstructorIngredient } from '@utils-types';
+import { BurgerConstructorUI } from '@ui';
+
+export const BurgerConstructor: FC = () => {
+  /** TODO: взять переменные constructorItems, orderRequest и orderModalData из стора */
+  const constructorItems = {
+    bun: {
+      price: 0
+    },
+    ingredients: []
+  };
+
+  const orderRequest = false;
+
+  const orderModalData = null;
+
+  const onOrderClick = () => {
+    if (!constructorItems.bun || orderRequest) return;
+  };
+  const closeOrderModal = () => {};
+
+  const price = useMemo(
+    () =>
+      (constructorItems.bun ? constructorItems.bun.price * 2 : 0) +
+      constructorItems.ingredients.reduce(
+        (s: number, v: TConstructorIngredient) => s + v.price,
+        0
+      ),
+    [constructorItems]
+  );
+
+  return null;
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
 
   return (
     <BurgerConstructorUI
@@ -62,4 +98,8 @@ export const BurgerConstructor: FC = () => {
       closeOrderModal={closeOrderModal}
     />
   );
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect } from 'react';
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import {
@@ -167,3 +168,19 @@ const App = () => {
 };
 
 export default App;
+=======
+import { ConstructorPage } from '@pages';
+import '../../index.css';
+import styles from './app.module.css';
+
+import { AppHeader } from '@components';
+
+const App = () => (
+  <div className={styles.app}>
+    <AppHeader />
+    <ConstructorPage />
+  </div>
+);
+
+export default App;
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9

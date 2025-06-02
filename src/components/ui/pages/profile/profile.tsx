@@ -26,8 +26,11 @@ export const ProfileUI: FC<ProfileUIProps> = ({
       <>
         <div className='pb-6'>
           <Input
+<<<<<<< HEAD
             onPointerLeaveCapture={() => {}}
             onPointerEnterCapture={() => {}}
+=======
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
             type={'text'}
             placeholder={'Имя'}
             onChange={handleInputChange}
@@ -41,8 +44,11 @@ export const ProfileUI: FC<ProfileUIProps> = ({
         </div>
         <div className='pb-6'>
           <Input
+<<<<<<< HEAD
             onPointerLeaveCapture={() => {}}
             onPointerEnterCapture={() => {}}
+=======
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
             type={'email'}
             placeholder={'E-mail'}
             onChange={handleInputChange}
@@ -56,8 +62,11 @@ export const ProfileUI: FC<ProfileUIProps> = ({
         </div>
         <div className='pb-6'>
           <Input
+<<<<<<< HEAD
             onPointerLeaveCapture={() => {}}
             onPointerEnterCapture={() => {}}
+=======
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
             type={'password'}
             placeholder={'Пароль'}
             onChange={handleInputChange}

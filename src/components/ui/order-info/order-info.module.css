@@ -14,11 +14,14 @@
   margin: 0;
 }
 
+<<<<<<< HEAD
 .orderNumber {
   margin: 0;
   text-align: center;
 }
 
+=======
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
 .img_wrap {
   width: 64px;
   height: 64px;
@@ -79,6 +82,7 @@
 .total {
   margin-left: auto;
 }
+<<<<<<< HEAD
 
 .title {
   font-weight: 700;
@@ -89,3 +93,5 @@
   margin-bottom: 0;
   font-family: 'Jet Brains Mono';
 }
+=======
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9

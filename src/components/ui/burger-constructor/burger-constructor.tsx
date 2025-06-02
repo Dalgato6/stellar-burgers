@@ -20,7 +20,11 @@ export const BurgerConstructorUI: FC<BurgerConstructorUIProps> = ({
 }) => (
   <section className={styles.burger_constructor}>
     {constructorItems.bun ? (
+<<<<<<< HEAD
       <div className={`${styles.element} mb-4 mr-4`} data-cy='bun'>
+=======
+      <div className={`${styles.element} mb-4 mr-4`}>
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
         <ConstructorElement
           type='top'
           isLocked
@@ -32,12 +36,19 @@ export const BurgerConstructorUI: FC<BurgerConstructorUIProps> = ({
     ) : (
       <div
         className={`${styles.noBuns} ${styles.noBunsTop} ml-8 mb-4 mr-5 text text_type_main-default`}
+<<<<<<< HEAD
         data-cy='bun-constructor'
+=======
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
       >
         Выберите булки
       </div>
     )}
+<<<<<<< HEAD
     <ul className={styles.elements} data-cy='ingredients'>
+=======
+    <ul className={styles.elements}>
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
       {constructorItems.ingredients.length > 0 ? (
         constructorItems.ingredients.map(
           (item: TConstructorIngredient, index: number) => (
@@ -52,14 +63,21 @@ export const BurgerConstructorUI: FC<BurgerConstructorUIProps> = ({
       ) : (
         <div
           className={`${styles.noBuns} ml-8 mb-4 mr-5 text text_type_main-default`}
+<<<<<<< HEAD
           data-cy='ingredients-constructor'
+=======
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
         >
           Выберите начинку
         </div>
       )}
     </ul>
     {constructorItems.bun ? (
+<<<<<<< HEAD
       <div className={`${styles.element} mt-4 mr-4`} data-cy='bun'>
+=======
+      <div className={`${styles.element} mt-4 mr-4`}>
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
         <ConstructorElement
           type='bottom'
           isLocked
@@ -71,7 +89,10 @@ export const BurgerConstructorUI: FC<BurgerConstructorUIProps> = ({
     ) : (
       <div
         className={`${styles.noBuns} ${styles.noBunsBottom} ml-8 mb-4 mr-5 text text_type_main-default`}
+<<<<<<< HEAD
         data-cy='bun-constructor'
+=======
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
       >
         Выберите булки
       </div>

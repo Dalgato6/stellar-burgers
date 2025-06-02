@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { FC, useEffect, useMemo } from 'react';
 import { Preloader } from '../ui/preloader';
 import { OrderInfoUI } from '../ui/order-info';
@@ -19,6 +20,26 @@ export const OrderInfo: FC<{ title?: string }> = ({ title }) => {
   useEffect(() => {
     dispatch(fetchOrderByNumber(Number(number)));
   }, [dispatch]);
+=======
+import { FC, useMemo } from 'react';
+import { Preloader } from '../ui/preloader';
+import { OrderInfoUI } from '../ui/order-info';
+import { TIngredient } from '@utils-types';
+
+export const OrderInfo: FC = () => {
+  /** TODO: взять переменные orderData и ingredients из стора */
+  const orderData = {
+    createdAt: '',
+    ingredients: [],
+    _id: '',
+    status: '',
+    name: '',
+    updatedAt: 'string',
+    number: 0
+  };
+
+  const ingredients: TIngredient[] = [];
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
 
   /* Готовим данные для отображения */
   const orderInfo = useMemo(() => {
@@ -66,6 +87,7 @@ export const OrderInfo: FC<{ title?: string }> = ({ title }) => {
     return <Preloader />;
   }
 
+<<<<<<< HEAD
   return isLoading ? (
     <Preloader />
   ) : (
@@ -75,4 +97,7 @@ export const OrderInfo: FC<{ title?: string }> = ({ title }) => {
       title={title}
     />
   );
+=======
+  return <OrderInfoUI orderInfo={orderInfo} />;
+>>>>>>> 9fb9048013bb250a7431808b754de003959eb3a9
 };
